@@ -1,0 +1,199 @@
+
+
+@media (max-width: 1040px){
+    .main-div2-line2{
+        padding-left: 41vh;
+        padding-right: 41vh;
+    }
+}
+
+@media (max-width: 850px){
+    .menu-responsivo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 100%;
+    }
+
+    .main-div3{
+        height: 100vh;
+    }
+
+    .opacy2{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .cafeirlandes{
+        width: 100%;
+        height: 50%;
+    }
+
+    .coffeetext{
+        width: 100%;
+        height: 50%;
+    }
+
+    .coffeetext p{
+        padding-left: 10vh;
+        padding-right: 10vh;
+        font-size: 13pt;
+    }
+
+    .menu-responsivo-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        margin-top: 12vh;
+        background-color: var(--header);
+        transform: translateX(-100%);
+        transition: .5s ease-in-out;
+    }
+
+    .menu-responsivo-content a{
+        color: var(--secondaryBackground);
+        text-decoration: none;
+        font-size: 15pt;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+    }
+
+    header{
+        gap: 0vh;
+    }
+
+    .header-div2{
+        display: none;
+    }
+
+    .header-div1{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-div2-line2{
+        padding-left: 21vh;
+        padding-right: 21vh;
+    }
+}
+
+@media (max-width: 800px){
+
+    .main-div2{
+        height: 160vh;
+    }
+
+    .main2-text{
+        padding-bottom: 20vh;
+    }
+
+    .main-div2-line1 .img1, .main-div2-line1 .img2{
+        width: 50vw;
+    }
+
+    .main-div2-line1{
+        display: flex;
+        flex-direction: column;
+        gap: 15vh;
+    }
+}
+
+@media (max-width: 600px){
+    .coffeetext p{
+        padding-left: 5vh;
+        padding-right: 5vh;
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 400px){
+    .main-div2-line1 .img1, .main-div2-line1 .img2{
+        width: 70vw;
+    }
+
+    .main-div2-line2 p{
+        padding-top: 10vh;
+    }
+}
+
+@media (max-width: 550px){
+    .main-div2-line2{
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+
+    .main-div2-line2 p{
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 950px){
+    .card-cafe{
+        width: 60%;
+    }
+
+    .card-cafe h1{
+        font-size: 15pt;
+    }
+}
+
+
+
+
+
+
+#menu-h{
+    position: absolute;
+    opacity: 0;
+}
+
+.label{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 20px;
+}
+
+.label span{
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--secondaryBackground);
+    transition: 0.25s ease-in-out;
+}
+
+.label span:nth-child(1){
+    top: 0;
+}
+
+.label span:nth-child(2){
+    top: 8px;
+}
+
+.label span:nth-child(3){
+    top: 16px;
+}
+
+#menu-h:checked + .label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#menu-h:checked + .label span:nth-child(2){
+    opacity: 0;
+}
+
+#menu-h:checked + .label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
